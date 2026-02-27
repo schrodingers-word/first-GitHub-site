@@ -116,4 +116,16 @@ color: #ff5722;
 font-weight: bold;
 
 }
+/* Transition makes the movement smooth instead of instant */
+.hover-move {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+/* The action when cursor is placed on the image */
+.hover-move:hover {
+    /* Lifts the dog image up and grows it slightly */
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
 
