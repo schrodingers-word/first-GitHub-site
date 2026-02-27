@@ -128,4 +128,28 @@ font-weight: bold;
     transform: translateY(-15px) scale(1.03);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a shadow for depth */
 }
+.image-container {
+  position: relative;
+  width: fit-content;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
 
